@@ -50,6 +50,8 @@ const lerPlanilha =()=> {
         if(sheetName==='Discentes'){
             const students = dados.map(obj => {
                 const novoObj = {};
+                novoObj.IdDiscente= obj["Identificador do Discente"];
+                novoObj.IdPessoa= obj["Identificador da Pessoa"];
                 novoObj.name= obj["Nome Discente"];
                 novoObj.student_level = obj["Nome Docente"];
                 novoObj.status = obj["Situação Discente"];
