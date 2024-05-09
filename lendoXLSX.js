@@ -32,6 +32,10 @@ const lerPlanilha =()=> {
         if(sheetName==='Docentes'){
             const Instructors = dados.map(obj => {
                 const novoObj = {};
+                
+                novoObj.IdDocente= obj["Identificador do Docente"];
+                novoObj.IdPessoa= obj["Identificador da Pessoa"];
+                novoObj.lattes_resume_number= obj["Número do currículo Lattes"];
                 novoObj.lattes_resume_number= obj["Número do currículo Lattes"];
                 novoObj.name = obj["Nome Docente"];
                 novoObj.qualification = obj.Titulação;
